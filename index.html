@@ -33,6 +33,9 @@
       line-height: 1.6; color: var(--fg); background: var(--bg);
       -webkit-font-smoothing: antialiased;
     }
+    .brand { display: flex; align-items: center; gap: 14px; margin: 0 0 2.2em; color: inherit; text-decoration: none; }
+    .brand img { width: 56px; height: 56px; border-radius: 13px; box-shadow: 0 1px 3px rgba(0,0,0,.14); }
+    .brand span { font-size: 1.6rem; font-weight: 600; letter-spacing: -.01em; }
     h1 { font-size: 2.1rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .5em; }
     h2 { font-size: 1.05rem; margin: 2.6em 0 .8em; letter-spacing: .02em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
     .lede { font-size: 1.18rem; color: var(--fg); margin: 0 0 2em; }
@@ -56,12 +59,14 @@
     .follow a { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 48px; border: 1px solid var(--fg); border-radius: 12px; }
     .follow svg { width: 22px; height: 22px; fill: currentColor; }
     footer { margin-top: 3.5em; padding-top: 1.4em; border-top: 1px solid var(--line); font-size: .92rem; color: var(--muted); }
-    @media (max-width: 480px) { body { padding: 36px 20px 56px; } h1 { font-size: 1.7rem; } .lede { font-size: 1.07rem; }
+    @media (max-width: 480px) { body { padding: 36px 20px 56px; } .brand { margin-bottom: 1.8em; } .brand img { width: 48px; height: 48px; border-radius: 11px; } .brand span { font-size: 1.4rem; } h1 { font-size: 1.7rem; } .lede { font-size: 1.07rem; }
       .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
       .shots figure { scroll-snap-align: start; } }
   </style>
 </head>
 <body>
+
+  <a class="brand" href="/"><img src="/img/icon.png" width="56" height="56" alt=""><span>Linnea</span></a>
 
   <h1>A personal stylist for the wardrobe you already own.</h1>
 
